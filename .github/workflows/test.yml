@@ -5,10 +5,17 @@ on:
    branches:
      - main
 jobs:
+#   my-job:
+#     runs-on: ubuntu-latest
+#     environment:
+#       name: test-deployment
+#     steps:
+#       - name: my-step
+#         run: echo "Hello World!"
   my-job:
     runs-on: ubuntu-latest
     environment:
-      name: test-deployment
+      name: stage-deployment
     steps:
       - name: my-step
         run: echo "Hello World!"
